@@ -1,0 +1,50 @@
+.team {
+    margin-bottom: 80px;
+    .Carousel-panel {
+        bottom: -35px;
+
+        .myCarousel {
+        width: 16px;
+        height: 16px;
+        background-color: #24A3FF;
+        border-radius: 50%;
+        opacity: 0.2;
+        
+            &:hover {
+                opacity: 0.6;
+            }
+            &:focus {
+                opacity: 1;
+            }
+        }
+    }
+    .card_box {
+        background-color: $grey-light;
+        border: 0;
+            .team__nav {
+            color: $blue;
+            &::after {
+                content: '›';
+                font-size: 20px;
+                margin-left: 5px;   
+            }
+        }
+        .card_heading {
+            @extend %gradient-reverce;
+            @include text(42px,500,50px,initial,$red);
+        }
+        .card_text-mobile {
+
+            font-size: 18px;
+            line-height: 21px;
+            color: $grey;
+        }
+        .img-mobile {
+            @extend %display-none;
+        }
+    }
+        
+    
+    
+    
+}

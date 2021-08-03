@@ -1,0 +1,85 @@
+header {
+    position: relative;
+    width: 100%;
+    margin-bottom: 80px;
+    .header-container {
+        position: relative;
+        align-items: flex-end!important;
+        .header__contacts {
+            display: flex;
+            position: absolute;
+            align-items: baseline;
+            right: 0;
+            top: 0;
+            .lang-switcher {
+                margin-right: 20px;
+                label {
+                    span {
+                        @include text(12px,900,14px,uppercase,$grey);
+                        letter-spacing: 1px;
+                        width: 29px;
+                        height: 24px;
+                        text-align: center;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 8px;
+                        cursor: pointer;
+                        &:hover {
+                            background: $grey-light2;
+                            
+                        }
+                        
+                    }
+                    input[type=radio] {
+                        display: none;
+
+                        &:checked + span {
+                            background: $red;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+            .address {
+                margin-right: 12px;
+                a {
+                    @include text(16px,400,19px,math-auto,$grey);
+                }
+            }
+            .phone {
+                margin-right: 10px;
+                &::before, 
+                &::after {
+                    content: '•';
+                    color: $grey;
+                    font-size: 20px
+
+                }
+                a {
+                    @include text(16px,900,19px,uppercase,$grey);
+                }
+            }
+        }
+        
+        .navbar-toggler {
+            box-shadow: none;
+            .navbar-toggler-icon {
+                background-image:url(../images/burgerBlack.svg) ;
+                width: 32px;
+                height: 32px;
+            }
+        }
+        
+            .nav-link {
+                font-size: 18px;
+                line-height: 21px;
+                color: $blue;
+                &:hover {
+                    color: $red;
+                }
+               
+            }
+        
+    }
+}

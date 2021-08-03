@@ -1,0 +1,65 @@
+.expirience {
+    padding-top: 80px;
+    margin-bottom: 80px;
+    .exp__col-left {
+        padding: 0;
+    
+        
+        label {
+            border-right: 4px solid #E6E6F0;
+            &:hover {
+                border-color: $red;
+            }
+            input[type=radio] {
+                
+                @extend %display-none;
+
+                &:checked + span {
+                    @extend %gradient-text;
+                }
+            }
+            span {
+                @include text(42px,900,50px,initial,$grey);
+                display: inline-block;
+                padding-right: 40px;
+                text-align: end;
+                &:hover {
+                    @extend %gradient-text;
+                }
+            }
+        }
+        
+    }
+    .exp__col-right {
+        padding: 0 0 0 40px;
+        h4 {
+            @include text(32px,500px,38px,initial,$white);
+            max-width: 600px;
+            margin-bottom: 20px;
+        }
+        p {
+            @include text(21px,100,30px,initial,$white);
+            max-width: 600px;
+        }
+    }
+    .slider {
+        display: flex;
+        justify-content: space-between;
+        max-width: 106px;
+        margin: 0 auto;
+        .slider-ring {
+            width: 16px;
+            height: 16px;
+            background: $blue;
+            opacity: 0.2;
+            border-radius: 50%;
+            &:first-child {
+                opacity: 1;
+            }
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    
+    }
+}

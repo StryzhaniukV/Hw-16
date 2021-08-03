@@ -1,0 +1,14 @@
+@mixin text($size, $weight, $line-height, $text-transform, $color) {
+    font-size: $size ;
+    font-weight: $weight;
+    line-height: $line-height ;
+    text-transform: $text-transform;
+    color: $color;
+    @if $weight == bold {
+        font-weight: 900;
+    } @else if $weight == semi-bold {
+        font-weight: 500;
+    } @else if $weight == regular {
+        font-weight: 400;
+    }
+}

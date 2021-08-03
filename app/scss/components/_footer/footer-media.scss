@@ -1,0 +1,41 @@
+@media (max-width: 768px) {
+    footer {
+        .footer__row {
+
+           .footer__address-box {
+        flex-direction: column;
+        align-items: center;
+        .footer__address {
+            margin-bottom: 10px;
+        }
+        .footer__map::before {
+            display: none;
+        }
+        }
+        .footer__contacts {
+            flex-direction: column;
+            margin-bottom: 20px;
+            .footer__social {
+                margin-bottom: 20px;
+            }
+            .footer__phone {
+                margin-bottom: 20px;
+                &::before {
+                    display: none;
+                }
+            }
+            .footer__mail {
+                margin-bottom: 20px;
+                &::before {
+                    display: none;
+                }
+            }
+        }
+        .footer__copy {
+            text-align: center;
+        } 
+        }
+        
+    }
+    
+}

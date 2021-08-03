@@ -1,0 +1,13 @@
+.photo {
+    background-image: url(../images/About-photo.jpg);
+    background-size: cover;
+    height: 438px;
+    background-position: center;
+    margin-bottom: 80px;
+    .photo__text {
+        @include text(96px,900,113px,uppercase,$white);
+        letter-spacing: 63px;
+        opacity: 0.8;
+        text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+    }
+}

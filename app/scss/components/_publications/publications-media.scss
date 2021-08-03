@@ -1,0 +1,27 @@
+@media (max-width: 767px) {
+    .publications {
+        padding-bottom: 40px;
+        overflow: inherit;
+        max-height: inherit;
+        
+        .publications__box {
+            
+            &:nth-last-child(n+2) { 
+                display: none;
+            }
+           .publications__date {
+            border: none;
+            }
+            .publications__text {
+                display: none;
+            }
+        }
+        .publications__button {
+            position: inherit;
+            transform: inherit;
+        }
+        .publications__shade {
+            display: none;
+        }
+    }
+}

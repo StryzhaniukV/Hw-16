@@ -1,0 +1,29 @@
+@media (max-width: 768px) {
+    header {
+        .header-container {
+            .header__contacts {
+                margin-bottom: 20px;
+                position: static;
+                width: 100%;
+                justify-content: space-between;
+            }
+            .navbar-brand {
+                img {
+                    width: 50%;
+                }
+            }
+            .address {
+                display: none;
+            }
+            .phone {
+                &::before,
+                &::after {
+                    display: none;
+                }
+            }
+            .social {
+                display: none;
+            }
+        }
+    }
+}

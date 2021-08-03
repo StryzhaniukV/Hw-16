@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+    .exp_serv {
+
+        &::before {
+            width: 90%;
+            
+        }
+        &::after {
+            width: 87%;
+            
+        }
+    }
+}

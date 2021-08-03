@@ -1,0 +1,27 @@
+.clients {
+    .clients__heading {
+        @include text(14px,500,17px,uppercase,$blue-dark);
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .clients__item {
+        display: flex;
+        height: 120px;
+        justify-content: center;
+        align-items: center;
+
+        
+        
+        @each $i, $color  in $colors {
+            
+        
+            &:nth-child(#{$i}) {
+                background-color: $color
+            }
+        }
+        .clients__logo {
+            width: 62%;
+        }
+    }
+}

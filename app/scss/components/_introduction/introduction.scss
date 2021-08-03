@@ -1,0 +1,18 @@
+.introduction {
+    margin-bottom: 100px;
+    .introduction__heading {
+        @extend %gradient-reverce;
+        @include text(42px,500,50px,initial,$red);
+        margin-bottom: 20px;
+    }
+    .introduction__main-text {
+        @include text(21px,normal,30px,initial,$black);
+    }
+    .introduction__right {
+        max-height: 250px;
+        border-left: 4px solid #E6E6F0;
+        .introduction__item-text {
+            @include text(18px,normal,21px,initial,$blue-dark);
+        }
+    }
+}

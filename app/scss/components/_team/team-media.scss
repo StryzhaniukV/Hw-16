@@ -1,0 +1,22 @@
+@media (max-width:767px) {
+
+    .team {
+            .card-heading {
+                font-size: 32px;
+                line-height: 38px;
+            }
+            .img-big {
+                display: none;
+            }
+            .card-mobile {
+                display: flex;
+                width: 100%;
+                flex-direction: row-reverse;
+                justify-content: flex-end;
+                .img-mobile {
+                    display: initial;
+                    margin-right: 15px;
+                }
+            }
+    }
+}

@@ -1,0 +1,28 @@
+.exp_serv {
+    background: $gradient-supersoft;
+    border-radius: 0 0 30px 30px;
+    position: relative;
+    margin-bottom: 60px;
+    
+    &::before, 
+    &::after {
+        content: '';
+        display: block;
+        height: 10px;
+        margin: 10px auto;
+        border-radius: 0 0 30px 30px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &::before {
+        width: 94%;
+        background-color: #CACADB;
+        bottom: -20px;
+    }
+    &::after {
+        width: 90%;
+        background-color: #E7E7F2;
+        bottom: -30px;
+    }
+}

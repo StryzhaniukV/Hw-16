@@ -1,0 +1,65 @@
+.publications {
+    background-color: $grey-light;
+    padding-top: 40px;
+    position: relative;
+    overflow: hidden;
+    max-height: 872px;
+    .publications__nav {
+        
+        @include text(14px,900,17px,uppercase,$blue);
+        
+        &::after {
+            content: '›';
+            font-size: 20px;
+            margin-left: 5px;   
+        }
+    
+    
+    }
+    h2 {
+        margin-bottom: 40px;
+        .publications__heading {
+        @extend %gradient-reverce;
+        @include text(42px,500,50px,initial,$red);
+        
+        }
+    }
+    .publications__box {
+        border: none;
+        border-radius: 10px;
+       .publications__titles {
+        @include text(18px,normal,21px,initial,$blue);
+        margin-bottom: 10px;
+        }
+    }
+    .publications__date {
+        @include text(12px,900,14px,uppercase,$grey);
+        border-bottom: 4px solid $grey-light2;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    } 
+    .publications__button {
+        position: absolute;
+        border: none;
+        @include text(14px,900,17px,initial,$white);
+        background: $blue;
+        box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+        border-radius: 12px;
+        padding: 16px 50px;
+        bottom: 35px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+    .publications__shade {
+        background: linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, #F5F5FA 86.5%);
+        height: 200px;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        width: 100%;
+    }
+    
+        
+    
+}

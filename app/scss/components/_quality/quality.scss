@@ -1,0 +1,11 @@
+.quality {
+    margin-bottom: 95px;
+    
+    .quality__main-text {
+        @include text(21px,normal,30px,initial,$black);
+    }
+    .quality__heading {
+        @extend %gradient-reverce;
+        @include text(42px,900,50px,initial,$red);
+    }
+}
