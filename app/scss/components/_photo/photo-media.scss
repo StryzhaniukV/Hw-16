@@ -1,0 +1,18 @@
+@media (max-width: 992px) {
+    .photo {
+        .photo__text {
+        @include text(72px,900,80px,uppercase,$white);
+        letter-spacing: 42px;
+        }
+    }
+    
+}
+@media (max-width: 700px) {
+    .photo {
+        .photo__text {
+        @include text(36px,900,42px,uppercase,$white);
+        letter-spacing: 20px;
+        }
+    }
+    
+}

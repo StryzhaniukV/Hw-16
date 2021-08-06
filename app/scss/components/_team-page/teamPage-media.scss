@@ -1,0 +1,23 @@
+@media (max-width: 576px) {
+    .team__heading {
+        p {
+            margin: 0 auto 20px;
+            @include text(32px,900,38px,initial,$red);
+        }
+    }
+    .team__members {
+        margin-bottom: 40px;
+        .team__box {
+            flex-direction: row;
+            .team__photo {
+                width: 50%;
+                margin-bottom: 0;
+                margin-right: 20px;
+            }
+            .team__link {
+                flex-direction: column;
+                width: 50%;
+            }
+        }
+    }
+}

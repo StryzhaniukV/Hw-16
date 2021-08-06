@@ -1,0 +1,33 @@
+.team__heading {
+    p {
+        margin: 0 auto 80px;
+        @extend %gradient-reverce;
+        @include text(42px,900,50px,initial,$red);
+    }
+}
+.team__members {
+    margin-bottom: 60px;
+    .team__photo {
+    margin-bottom: 20px;
+    }
+    .team__link {
+        h5 {
+            @include text(15px,400,21px,initial,$blue-dark);
+            margin-bottom: 5px;
+
+        }
+        p {
+            @include text(14px,400,22px,initial,$grey-light2);
+            margin: 0;
+        }
+        .team__icon {
+            background-color: $grey-light;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+        }
+    }
+}    
+
+    
+

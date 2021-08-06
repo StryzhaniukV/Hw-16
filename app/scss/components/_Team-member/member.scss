@@ -1,0 +1,38 @@
+.member {
+    .member__photo {
+        border-radius: 12px;
+    }
+    .member__heading {
+        @extend %gradient-reverce;
+        @include text(42px,500,50px,initial,$red);
+    }
+    .member__contacts {
+        margin-bottom: 20px;
+        .member__mail {
+            
+            &::before, 
+            &::after {
+                content: '•';
+                color:$grey-light2;
+                font-size: 20px;
+                margin: 10px;
+                
+
+            }
+        }
+        
+    }
+    .member__text {
+        &:first-child {
+            border-top: $block-border;
+            padding-top: 40px;
+        }
+        @include text(18px,400,26px,initial,$black);
+        margin-bottom: 35px;
+    }
+    .member__mini-heading {
+        @include text(14px,900,17px,uppercase,$blue-dark);
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+}

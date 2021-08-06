@@ -1,0 +1,30 @@
+.achievments {
+    background-color: $grey-light;
+    padding-bottom: 75px;
+    .achievments__heading {
+        @include text(14px,500,17px,uppercase,$blue-dark);
+        padding: 30px 0;
+    }
+    .achievments__carousel {
+        bottom: -70px;
+    }
+    .achievments__slide {
+        width: 16px;
+        height: 16px;
+        background-color: $blue;
+        border-radius: 50%;
+        opacity: 0.2;
+        
+            &:hover {
+                opacity: 0.6;
+            }
+            &:focus {
+                opacity: 1;
+            }
+    }
+    .achievments__item {
+        padding: 25px 110px;
+        background-color: white;
+        border-radius: 10px;
+    }
+}
