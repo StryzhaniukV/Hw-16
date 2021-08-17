@@ -14,6 +14,9 @@
         h5 {
             @include text(15px,400,21px,initial,$blue-dark);
             margin-bottom: 5px;
+            &:hover {
+                color: $hover-link;
+            }
 
         }
         p {

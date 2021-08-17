@@ -1,7 +1,7 @@
 @media (max-width: 992px) {
     .introduction {
         .introduction__right {
-            border-top: 4px solid #E6E6F0;
+            border-top: $block-border;
             border-left: none;
             padding-top: 15px;
         }

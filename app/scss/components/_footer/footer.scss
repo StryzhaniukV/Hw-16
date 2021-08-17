@@ -2,7 +2,7 @@ footer {
     background-color: $grey-light;
     .footer__row {
         padding: 30px 0;
-        border-top: 4px solid $grey-light2;
+        border-top: $block-border;
         .footer__address-box {
             margin-bottom: 20px;
             align-items: baseline;
@@ -11,6 +11,9 @@ footer {
             }
             .footer__map {
                 @include text(12px,bold,14px,uppercase,$blue);
+                &:hover {
+                    color: $hover-link;
+                }
                 &::before {
                     content: '•';
                     color: $grey;
@@ -28,8 +31,17 @@ footer {
 
             }
         }
+        .footer__social {
+            color: red;
+            svg:hover {
+                fill: $hover-link;
+            }
+        }
         .footer__mail {
             @include text(16px,bold,19px,initial,$blue);
+            &:hover {
+                color: $hover-link;
+            }
             &::before {
                 content: '•';
                 color: $grey;
@@ -40,5 +52,10 @@ footer {
         .footer__copy {
             @include text(16px,normal,19px,initial,$grey);
         }
+    }
+}
+.special-page {
+    .footer__row {
+        border-top: none;
     }
 }

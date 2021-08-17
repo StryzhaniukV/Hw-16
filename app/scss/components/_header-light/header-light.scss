@@ -27,9 +27,7 @@ header {
                         cursor: pointer;
                         &:hover {
                             background: $grey-light2;
-                            
                         }
-                        
                     }
                     input[type=radio] {
                         display: none;
@@ -45,6 +43,9 @@ header {
                 margin-right: 12px;
                 a {
                     @include text(16px,400,19px,math-auto,$grey);
+                    &:hover {
+                        color: $hover-link;
+                    }
                 }
             }
             .phone {
@@ -58,6 +59,14 @@ header {
                 }
                 a {
                     @include text(16px,900,19px,uppercase,$grey);
+                    &:hover {
+                        color: $hover-link;
+                    }
+                }
+            }
+            .social {
+                svg:hover {
+                    fill: $hover-link;
                 }
             }
         }

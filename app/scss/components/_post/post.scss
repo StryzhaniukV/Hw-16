@@ -1,0 +1,49 @@
+@import "bootstrap/scss/card";
+.post {
+    &__card {
+        @include text(32px,500,38px,initial,$blue-dark);
+    }
+    &__text {
+        @include text(18px,400,26px,initial,$black);
+        .post__point {
+            color: $red;
+            font-weight: 500;
+            margin: 10px;
+        }
+    }
+    &__heading {
+        @extend %gradient-reverce;
+        @include text(42px,900,50px,initial,$red);
+    }
+    &__mini-heading {
+        @include text(24px,500,28px,initial,$blue-dark);
+    }
+    &__img2 {
+        width: 75%;
+    }
+    &__icon-box {
+        max-width: 146px;
+    }
+    &__icon {
+        width: 42px;
+        height: 42px;
+        background: $grey-light;
+        border-radius: 12px;
+        img {
+            width: 58%;
+        }
+    }
+}
+@media (max-width:768px) {
+    .post {
+        &__card {
+            @include text(22px,500,26px,initial,$blue-dark);
+        }
+        &__heading {
+            @include text(32px,900,38px,initial,$red);
+        }
+        &__mini-heading {
+            @include text(18px,500,21px,initial,$blue-dark);
+        }
+    }
+}

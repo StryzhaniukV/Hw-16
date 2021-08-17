@@ -1,3 +1,5 @@
+@import "bootstrap/scss/card";
+
 .member {
     .member__photo {
         border-radius: 12px;
@@ -9,7 +11,9 @@
     .member__contacts {
         margin-bottom: 20px;
         .member__mail {
-            
+            &:hover {
+                color: $hover-link;
+            }
             &::before, 
             &::after {
                 content: '•';
@@ -19,6 +23,9 @@
                 
 
             }
+        }
+        .member__linked:hover {
+            color:$hover-link;
         }
         
     }
@@ -34,5 +41,13 @@
         @include text(14px,900,17px,uppercase,$blue-dark);
         letter-spacing: 1px;
         margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 575px) {
+    .member {
+        .member__heading {
+            @include text(32px,500,38px,initial,$red);
+        }
     }
 }

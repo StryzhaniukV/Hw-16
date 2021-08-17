@@ -1,0 +1,60 @@
+.contacts {
+    margin-bottom: 80px;
+    .contacts__cotacts-box {
+        border: $block-border;
+        padding: 40px 0;
+    }
+    .contacts__address, .contacts__phone {
+        @include text(21px,normal,30px,initial,$blue-dark);
+    }
+    .contacts__mail {
+        @include text(21px,normal,30px,initial,$blue);
+    }
+    .contacts__social {
+        @include text(12px,normal,16px,uppercase,$blue);
+        letter-spacing: 1px;
+        p {
+            max-width: 123px;
+        }
+    }
+    .contacts__form {
+        background: $grey-light;
+        border-radius: 12px;
+        padding: 20px;
+        .form__heading {
+            @extend %gradient-reverce;
+            @include text(32px,500,38px,initial,$red);
+        }
+        h5 {
+            @include text(14px,400,17px,uppercase,$grey);
+            letter-spacing: 1px;
+        }
+        .form__input {
+            height: $form-height;
+            border-radius: 8px;
+            &::placeholder {
+                @include text(18px,400,26px,initial,$grey);
+            }
+        }
+        .form__textarea {
+            height: 180px;
+            &::placeholder {
+                @include text(18px,400,26px,initial,$grey);
+            }
+        }
+        .form__button {
+            max-width: 250px;
+            border-radius: 12px;
+            background-color: $blue;
+            color: $white;
+            padding: 12px 0;
+            box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+            &:hover {
+                background-color: $hover-button;
+            }
+        }
+    }
+}
+.contactmap {
+    background-color: $grey-light;
+}

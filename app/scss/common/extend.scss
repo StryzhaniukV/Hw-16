@@ -17,3 +17,24 @@
 %mb20 {
     margin-bottom: 20px;
 }
+%form-body {
+    background: $grey-light;
+    border-radius: 12px;
+    padding: 20px;
+}
+%form-heading {
+    @extend %gradient-reverce;
+    @include text(32px,500,38px,initial,$red);
+}
+%form-input {
+    height: $form-height;
+    border-radius: 8px;
+}
+%form-button {
+    max-width: 250px;
+    border-radius: 12px;
+    background-color: $blue;
+    color: $white;
+    padding: 12px 0;
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+}
